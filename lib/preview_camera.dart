@@ -33,6 +33,7 @@ class _PreviewCameraState extends State<PreviewCamera>
         if (value == null) {
           return const ColoredBox(color: Colors.black);
         } else {
+          print("Thao: ${value.textureId}");
           return ClipRect(
             child: SizedBox(
               width: MediaQuery.of(context).size.width,
